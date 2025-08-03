@@ -6,9 +6,9 @@ interface Props {
 }
 
 export function AuthGuard({ children }: Props) {
-  const { error } = useSession();
+  const { data, error } = useSession();
 
-  if (error) {
+  if (error || !data?.user) {
     return <LoginForm />;
   }
 
