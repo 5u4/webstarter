@@ -3,7 +3,7 @@
   "mode": "file-router",
   "typescript": true,
   "tailwind": false,
-  "packageManager": "npm",
+  "packageManager": "pnpm",
   "git": true,
   "version": 1,
   "framework": "react-cra",

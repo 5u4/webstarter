@@ -1,5 +1,5 @@
 <div>
-<h1>webstarter</h1>
+<h1 align="center">webstarter</h1>
 </div>
 
 TODO replace all `webstarter` with your app name
@@ -12,10 +12,28 @@ stack:
 - tailwindcss
 - shadcn-ui
 
+## start
+
+```sh
+pnpm dlx degit 5u4/webstarter <your-project-name>
+cp .env.example .env
+pnpm i
+```
+
 ## dev
 
 ```sh
-cp .env.example .env
-pnpm i
+# start/stop local supabase
 pnpx supabase start
+pnpx supabase stop
+```
+
+```sh
+# run dev
+pnpm dev
+```
+
+```sh
+# adding new [shadcn](https://ui.shadcn.com/) components
+pnpm dlx shadcn@latest add ...
 ```

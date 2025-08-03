@@ -1,4 +1,4 @@
-import { LoginForm } from "@/components/auth/login-form";
+import { AuthForm } from "@/components/auth/auth-form";
 import { useSession } from "@/lib/supabase/session";
 
 interface Props {
@@ -9,7 +9,7 @@ export function AuthGuard({ children }: Props) {
   const { data, error } = useSession();
 
   if (error || !data?.user) {
-    return <LoginForm />;
+    return <AuthForm />;
   }
 
   return children;
