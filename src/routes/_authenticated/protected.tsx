@@ -8,7 +8,7 @@ export const Route = createFileRoute("/_authenticated/protected")({
 
 function RouteComponent() {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center h-full">
+    <div className="flex flex-col min-h-screen w-full items-center justify-center gap-2">
       <p>Hello "/protected"!</p>
       <Button onClick={() => supabase.auth.signOut()}>Log out</Button>
     </div>
