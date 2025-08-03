@@ -6,9 +6,16 @@ TODO replace all `webstarter` with your app name
 
 stack:
 
-- bun
 - vite
 - tanstack-router
 - tanstack-query
 - tailwindcss
 - shadcn-ui
+
+## dev
+
+```sh
+cp .env.example .env
+pnpm i
+pnpx supabase start
+```
